@@ -22,32 +22,28 @@ A minimalist Google Keep-style note-taking app built using **Java**, **Spring Bo
 
 ## 📁 Folder Structure
 
+```text
 googlekeepclone/
 ├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/utej/googlekeepclone/
-│ │ ├── controller/
-│ │ ├── model/
-│ │ ├── repository/
-│ │ └── service/
-│ ├── resources/
-│ │ ├── static/
-│ │ │ ├── home/
-│ │ │ ├── archive/
-│ │ │ └── trash/
-│ │ └── application.properties
+│   └── main/
+│       ├── java/
+│       │   └── com/utej/googlekeepclone/
+│       │       ├── controller/
+│       │       ├── model/
+│       │       ├── repository/
+│       │       └── service/
+│       ├── resources/
+│       │   ├── static/
+│       │   │   ├── home/
+│       │   │   ├── archive/
+│       │   │   └── trash/
+│       │   └── application.properties
 ├── pom.xml
-
-bash
-Copy
-Edit
-
+```
 ## ⚙️ Getting Started
 
 ### 1. Clone the repo
 
-```bash
 git clone https://github.com/utej8553/KeepClone.git
 cd KeepClone
 2. Configure the Database
@@ -56,23 +52,15 @@ Make sure PostgreSQL is installed and running.
 Create a database:
 
 sql
-Copy
-Edit
 CREATE DATABASE keepclone;
 Update application.properties:
 
 properties
-Copy
-Edit
 spring.datasource.url=jdbc:postgresql://localhost:5432/keepclone
 spring.datasource.username=your_postgres_username
 spring.datasource.password=your_postgres_password
 spring.jpa.hibernate.ddl-auto=update
 3. Run the Application
-bash
-Copy
-Edit
-./mvnw spring-boot:run
 Visit:
 👉 http://localhost:8080
 
